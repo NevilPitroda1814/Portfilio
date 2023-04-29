@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{ margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+}
+/* Main Conatin */
+.contain{
+    width: 100%;
+    position: relative;
+}
+.content{    display: none;}
+.active{    display: block;}
+
+/* Nav Bar */
+#access_nav svg{
+    padding-left: 10px;
+    padding-top: 10px;
+    position: fixed;
+    margin: 10px;
+}
+#main_nav{
+    display: none;
+    background-color: white;
+}
+.with_nav #main_nav {
+    display: block;
+    width: 120px;
+    padding: 30px;
+    position: absolute;
+    background-color: white;
+    position: fixed;
+    margin-top: 50px;
+}
+
+#main_nav ul{list-style: none;}
+#main_nav ul li{ margin: 25px 0; }
+#main_nav ul li a{
+    text-decoration: none;
+    background-color: white;
+    font-size: 20px;
+    color: black;
+}
+#main_nav ul li a:hover{
+    background-color: rgba(230, 230, 250, 0.398);
+    padding: 10px;
+    border-radius: 10px;
+}
+#main_nav li.active a{
+    background-color: lavender;
+    padding: 10px;
+    border-radius: 10px;
+}
+#myProgress {
+    width: 3%;
+    height: 200px;
+    background-color: #ddd;
+}
+#myBar {
+    width: 100%;
+    height: 33px;
+    background-color: gray;
+}
+#myBarContact{
+    width: 100%;
+    height: 33px;
+    background-color: gray;
+}
+#main_nav input{
+    border: none;
+    background-color: white;
+}
+#progressTxt2{ display: none; }
+section{ width: 90%; }
+/* About Me  */
+#about_me{
+    display: flex;
+    width: 90%;
+    margin-left: 15%;
+    margin-top: 0;
+}
+/* text about me  */
+.txt_about_me{
+    width: 70%;
+    padding: 0 5%;
+    margin-top: 10%;
+}
+.txt_about_me h6{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 5px;
+}
+.txt_about_me h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+}
+.txt_about_me blockquote{
+    margin: 30px 2px ;
+    color: gray;
+}
+.txt_about_me a{ color: gray; }
+.txt_about_me h4{
+    color: gray;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+.txt_about_me h5{
+    color: gray;
+    font-size: 14px;
+    text-align: justify;
+}
+.txt_about_me p{
+    color: gray;
+    margin: 1px;
+    text-align: justify;
+}
+.txt_about_me img{ margin: 30px; }
+/* Image section  */
+.myImg{
+    width: 100%;
+    position: relative;
+}
+.myImg img{
+    width: 450px;
+    height: 80%;
+    height: 80%;
+    position: absolute;
+    top: -55px;
+    margin: 0px 20px 20px 20px;
+}
+.myImg .hire_btn{
+    position: absolute;
+    bottom: 15%;
+}
+.hire_btn{
+    padding: 10px 50px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(31, 172, 31);
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* media link section */
+.media_div{
+    width: 10%;
+    margin: 20px;
+}
+.search svg{
+    margin-left: 90%;
+    cursor: pointer;
+}
+.media_div ul{ margin-top: 350px;}
+.media_div li{
+    list-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: left;
+    margin: 20px 5px ;
+    padding: 5px;
+}
+.media_div li:hover{
+    background-color: #ddd;
+    border-radius: 10px;
+}
+.media_div li a{
+    text-decoration: none;
+    color: black;
+}
+/* portfilio section */
+#protofilio_section{
+    display: none;
+    width: 96%;   
+    margin-left: 15%;
+    margin-top: 0;
+}
+.portfilio_head{
+    margin: 10px; 
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding: 8px;
+}
+.cart_icon{
+    cursor: pointer;
+    margin-left: 0;
+    padding: 0;
+    margin: 0;
+}
+.play_btn{
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
+    cursor: pointer;
+    margin-left: 70%;
+    margin-right: 15px;
+}
+.portfilio{
+    width: 80%;
+    display: flex;
+    padding: 20px;
+}
+.protofilio_img h6{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 5px;
+}
+.protofilio_img h2{
+    font-size: 55px;
+    margin: 5px;
+    text-transform: uppercase;
+}
+.protofilio_img img{
+    width: 50%;
+    height: 200px;
+    margin: 15px;
+}
+.protofilio_img blockquote{
+    color: gray;
+    margin: 10px;
+}
+/* discribe images */
+.discribe_imgs{
+    padding: 15px;
+}
+.discribe_imgs img{
+    width: 500px;
+    height: 300px;
+    margin: 15px;
+}
+/*  redesing text section */
+.fst_redes,.snd_redes{
+    width: 200px;
+    padding: 10px;
+}
+.fst_redes h6,.snd_redes h6{
+    font-size: 14px;
+    color: gray;
+    text-transform: uppercase;
+    padding: 8px;
+}
+.fst_redes p,.snd_redes p{
+    color: gray;
+    padding: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+.colors{display: flex;}
+.snd_col div{display: flex;}
+.bg_pink{
+    width: 100px;
+    height: 105px;
+    background-color: pink;
+    margin: 10px;
+}
+.bg_red,.bg_yellow{
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px 5px 5px;
+}
+.bg_red{    background-color: red;}
+.bg_yellow{background-color: yellow;}
+.bg_skyblue{
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.bg_lightgreen{
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.ai_icon,.ps_icon,.xd_icon{
+    width: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 5px;
+}
+.figma_icon{
+    width: 25px;
+    border-radius: 50px;
+    background-color: rgb(6, 6, 30);
+    padding: 3px;
+    margin: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+/* contact section */
+#contact_section{display: none;}
+#contact{
+    display: flex;
+    width: 90%;
+    margin-left: 15%;
+}
+#contact .contact_detail{
+    margin-top: 10%;
+}
+#contact .protofilio_img{
+    width: 60%;
+    margin: 5px;
+}
+#contact .protofilio_img img{
+    position: absolute;
+    width: 450px;
+    height: 95%;
+    margin: 0;
+    top: -30px;
+}
+#contact  p{
+    font-size: 14px;
+    color: gray;
+    padding: 15px;
+    text-align: justify;
+}
+.contact_detail{
+    width: 40%;
+    margin: 15px;
+}
+.contact_detail h6{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: gray;
+}
+.contact_detail h2{
+    font-size: 40px;
+    color: gray;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact_detail blockquote{
+    color: gray;
+    margin: 8px;
+    text-align: justify;
+}
+.contact_detail h5{
+    font-size: 20px;
+    margin: 10px;
+    color: gray;
+}
+.contact_detail h5 span{
+    font-size: 16px;
+    font-weight: normal;
+}
+/* media Query  */
+@media (max-width : 767px){
+    #access_nav svg{
+        position:relative;
+    }
+    .with_nav #main_nav {
+        width: 100%;
+        padding: 15px;
+        margin-top: 0;
+        position: relative;
+        display: flex;
+    }
+    #main_nav ul{display: flex; }
+    #main_nav ul li{  margin: 0 12px;}
+    #main_nav ul li a{
+        font-size: 10px;
+    }
+    #myProgress{display: none;}
+    #about_me{
+        margin-left: 0;
+        display: inline;
+    }
+    .txt_about_me img{    margin-left: 50px;}
+    .txt_about_me{width: 100%;}
+    .myImg{
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    .myImg img{
+        width: 70%;
+        height: 80%;
+        position: relative;
+        margin-top: 10%;
+    }
+    .myImg .hire_btn{
+        position: relative;
+        margin-left: 50px;
+    }
+    .media_div{
+        width: 98%;
+        border-top: 1px solid gray;
+        margin: 0;
+    }
+    .media_div,.media_div ul{
+        display: flex;
+        margin: 10px;
+        text-align: center;
+    }
+    .media_div ul{  margin-top: 0; }
+    .search svg{ margin: 10px; }
+    .media_div li{
+        font-size: 14px;
+        margin: 10px;
+        text-align: center;
+    }
+    #protofilio_section{
+        width: 100%;
+        margin-left: 0;
+        overflow: hidden;
+    }
+    .portfilio_head{   width: 100%; }
+    hr{width: 100%;margin: 0;}
+    .portfilio{ display: inline; }
+    .play_btn{margin-left: 50%;}
+    .portfilio_head{overflow: hidden;}
+    .portfilio_head .search svg{
+        margin: 10px;
+        cursor: pointer;
+    }
+    .portfilio{
+        width: 100%;
+        align-items: center;
+    }
+    .protofilio_img img{
+        width: 70%;
+        height: 20%;
+        margin-left: 70px;
+    }
+    .discribe_imgs img{
+        width: 100%;
+        height: 100%;
+    }
+    .fst_redes,.snd_redes{  width: 100%; }
+    .colors{
+        width: 100%;
+        justify-content: center;
+    }
+    .programs{
+        width: 100%;
+        justify-content: center;
+    }
+    #contact{
+        display: inline;
+        width: 100%;
+    }
+    #contact .protofilio_img img{
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: 50%;
+        margin-left: 50px;
+    }
+    .contact_detail{ width: 100%; }
+}

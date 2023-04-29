@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfilio</title>
+    <!-- style css link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- contain start -->
+    <div class="contain">
+        <!-- menu -->
+        <div class="menu">
+            <div>
+                <a href="#main_nav" id="access_nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="gary" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </a>
+            </div>
+            <nav id="main_nav">
+                
+                <ul >
+                    <li class="active"><a href="#about_me" class="about_btn" >About Me</a></li>
+                    <li><a href="#protofilio_section" class="portfilio_btn" onclick="move()">Portfilio </a></li>
+                    <li><a href="#contact_section" class="contact_btn" onclick="move2()">Contact</a></li>
+                </ul>
+                <div id="myProgress">
+                    <div id="myBar"></div>
+                    <div id="myBarContact"></div>
+                </div>
+                <p id="progressTxt">1-3</p>
+                <p id="progressTxt2">3-3</p>
+        </div>
+
+        <!-- Main Section -->
+
+        <section> 
+            <!-- about me section -->
+            <div id="about_me" class="content active">
+                <!-- About me text area -->
+                <div class="txt_about_me">
+                    <h6>Jemes Charleton</h6>
+                    <h2>About Me</h2>
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odio nulla velit esse ea quos unde ex earum voluptatum aliquid!</blockquote>
+                    <a href="#">subscribe to our newsletter</a><br><br>
+                    <h4>Experience</h4>
+                    <h5>2016 to present PayPay inc.</h5>
+                    <p>Sr. User experience desingner , Foundations</p>
+                    <h4>Projects</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo culpa officia fugiat rerum blanditiis dolores eos assumenda. Laudantium, cum quaerat?</p>
+                    <img src="projects.png" alt="desing image">
+                </div>
+                <!-- My Image section -->
+                <div class="myImg">
+                    <img src="girlwithcofee.png" alt="My Image">
+                    <br>
+                    <button class="hire_btn">Hire Me</button>
+                </div>
+                <!-- media links section -->
+                <div class="media_div">
+                    <div class="search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search" viewBox="0 0 16 16">
+                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                    </div>
+                    <ul>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="https://in.linkedin.com/">linked in</a></li>
+                            <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Portfilio section -->
+            <div id="protofilio_section" class="content">
+                <div class="portfilio_head">
+                    <div class="cart_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-handbag" viewBox="0 0 16 16">
+                            <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
+                          </svg>
+                    </div>
+                    <button class="play_btn">Play</button>
+                    <div class="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search" viewBox="0 0 16 16">
+                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="portfilio">
+                    <div class="protofilio_img">
+                        <h6>Jemes Charleton</h6>
+                        <h2>Portfilio</h2>
+                        <img src="girlwithcofee.png" alt="">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus temporibus obcaecati minus non sint maiores alias, praesentium impedit. Voluptates, </blockquote>
+                        <button class="hire_btn">Hire me</button>
+                    </div>
+                    <div class="discribe_imgs">
+                        <img src="redesign.jpg" alt="first describe image" class="first_disc_img">
+                        <img src="redesign2.jpg" alt="second describe image"class="sec_disc_img">
+                    </div>
+                    <div class="discribe_redesign">
+                        <div class="fst_redes">
+                            <h6>Dribble Redesign</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui consectetur! Sapiente, nemo quo temporibus placeat ullam optio quam nulla, quis rerum minima facilis officia aspernatur quidem autem fugit tenetur dolore explicabo sequi, possimus nostrum officiis corporis velit.</p>
+                            <h6>colors</h6>
+                            <div class="colors">
+                                <div class="bg_pink">
+                                <!-- pink -->
+                                </div>
+                                <div class="snd_col">
+                                    <div>
+                                        <div class="bg_red">
+                                            <!--red-->
+                                        </div>
+                                        <div class="bg_yellow">
+                                            <!--yellow-->
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="bg_skyblue">
+                                            <!-- skyblue -->
+                                        </div>
+                                        <div class="bg_lightgreen">
+                                            <!-- lightgreen -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="programs">
+                                <h6>Programs</h6>
+                                <img src="AI.png" class="ai_icon" alt="">
+                                <img src="ps.png" class="ps_icon" alt="">
+                                <img src="xd.png" class="xd_icon" alt="">
+                                <img src="figma.png" class="figma_icon" alt="">
+                            </div>
+                        </div>
+
+                        <div class="snd_redes">
+                            <h6>Dribble Redesign</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui consectetur! Sapiente, nemo quo temporibus placeat ullam optio quam nulla, quis rerum minima facilis officia aspernatur quidem autem fugit tenetur dolore explicabo sequi, possimus nostrum officiis corporis velit.</p>
+                            <h6>colors</h6>
+                            <div class="colors">
+                                <div class="bg_pink">
+                                <!-- pink -->
+                                </div>
+                                <div class="snd_col">
+                                    <div>
+                                        <div class="bg_red">
+                                            <!-- red -->
+                                        </div>
+                                        <div class="bg_yellow">
+                                            <!-- yellow -->
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="bg_skyblue">
+                                            <!-- skyblue -->
+                                        </div>
+                                        <div class="bg_lightgreen">
+                                            <!-- lightgreen -->
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="programs">
+                                <h6>Programs</h6>
+                                <img src="AI.png" class="ai_icon" alt="">
+                                <img src="ps.png" class="ps_icon" alt="">
+                                <img src="xd.png" class="xd_icon" alt="">
+                                <img src="figma.png" class="figma_icon" alt="">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!-- contact section -->
+            <div id="contact_section"  class="content">
+                <div id="contact">
+                    <div class="contact_detail">
+                        <h6>Jemes Charleton</h6>
+                        <h2>Portfilio</h2>
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odio nulla velit esse ea quos unde ex earum voluptatum aliquid!</blockquote>
+                        <h2>Contac detail</h2>
+                        <h5>Phone No.: <span>1234567890</span></h5>
+                        <h5>Email ID: <span>abc@gmail.com</span></h5>
+                        <h5>Phone No.: <span>abcd123</span></h5>
+                        <br>
+                        <button class="hire_btn">Hire Me</button>
+                    </div>
+                    <!-- My Image section -->
+                    <div class="protofilio_img">
+                        <img src="girlwithcofee.png" alt="My Image">
+                    </div>
+                    <!-- media links section -->
+                    <div class="media_div">
+                            <div class="serch">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search" viewBox="0 0 16 16">
+                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </div>
+                            <ul>
+                                <li><a href="#">Resume</a></li>
+                                <li><a href="#">linked in</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- contain end -->
+    <script src="script.js"></script>
+</body>
+</html>
